@@ -2,6 +2,8 @@
   "name": "ku-eecs-lab-annotator",
   "displayName": "ku-eecs-lab-annotator",
   "description": "Generate the KU EECS Lab info annotation at the top of the exercises",
+  "author": "Jack Martin",
+  "publisher": "ShackledMars261",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.104.0"
