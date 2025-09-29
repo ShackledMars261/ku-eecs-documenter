@@ -31,9 +31,9 @@ Be a KU Student
 
 This extension contributes the following settings:
 
-* `ku-eecs-lab-annotator.author`: What to fill the Author field with. (Probably your first and last name.)
-* `ku-eecs-lab-annotator.kuid`: What to fill the KUID field with. (Probably your KUID number.)
-* `ku-eecs-lab-annotator.dateFormat`: Which date format to use.
+* `ku-eecs-documenter.author`: What to fill the Author field with. (Probably your first and last name.)
+* `ku-eecs-documenter.kuid`: What to fill the KUID field with. (Probably your KUID number.)
+* `ku-eecs-documenter.dateFormat`: Which date format to use.
 
 NOTE: KUID and Author are recommended to be set through the "Setup" command in the command palette.
 

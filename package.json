@@ -1,12 +1,12 @@
 {
-  "name": "ku-eecs-lab-annotator",
+  "name": "ku-eecs-documenter",
   "displayName": "KU EECS Documenter",
-  "description": "Generate the KU EECS Lab info annotation at the top of the exercises",
+  "description": "Generate the KU EECS Lab info documentation at the top of the exercises",
   "author": "Jack Martin",
   "publisher": "ShackledMars261",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShackledMars261/ku-eecs-lab-annotator.git"
+    "url": "https://github.com/ShackledMars261/ku-eecs-documenter.git"
   },
   "version": "0.1.0",
   "engines": {
@@ -20,12 +20,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "ku-eecs-lab-annotator.generateAndWriteAnnotation",
+        "command": "ku-eecs-documenter.generateAndWriteAnnotation",
         "title": "Generate documentation for current file",
         "category": "EECS Documenter"
       },
       {
-        "command": "ku-eecs-lab-annotator.setup",
+        "command": "ku-eecs-documenter.setup",
         "title": "Setup the extension",
         "category": "EECS Documenter"
       }
@@ -34,19 +34,19 @@
       {
         "title": "KU EECS Documenter",
         "properties": {
-          "ku-eecs-lab-annotator.author": {
+          "ku-eecs-documenter.author": {
             "type": "string",
             "default": "",
             "scope": "application",
             "description": "What to fill the \"Author\" field with. (Probably your first and last name.)"
           },
-          "ku-eecs-lab-annotator.kuid": {
+          "ku-eecs-documenter.kuid": {
             "type": "integer",
             "default": 1234567,
             "scope": "application",
             "description": "What to fill the \"KUID\" field with. (Probably your KUID number.)"
           },
-          "ku-eecs-lab-annotator.dateFormat": {
+          "ku-eecs-documenter.dateFormat": {
             "type": "string",
             "default": "mm/dd/yyyy",
             "scope": "application",

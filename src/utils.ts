@@ -25,7 +25,7 @@ export function genFileExt(language: string): string {
 
 export function getCurrentFormattedDate(): string {
   let extConfig: vscode.WorkspaceConfiguration =
-    vscode.workspace.getConfiguration("ku-eecs-lab-annotator");
+    vscode.workspace.getConfiguration("ku-eecs-documenter");
   const dateFormat = extConfig.get<string>("dateFormat", "");
 
   const currentDate: Date = new Date();

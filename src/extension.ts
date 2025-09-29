@@ -11,14 +11,14 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "ku-eecs-lab-annotator.generateAndWriteAnnotation",
+      "ku-eecs-documenter.generateAndWriteAnnotation",
       async () => {
         await annotationManager.initialize();
         await fileManager.initialize();
         await commands.generateAnnotation();
       },
     ),
-    vscode.commands.registerCommand("ku-eecs-lab-annotator.setup", async () => {
+    vscode.commands.registerCommand("ku-eecs-documenter.setup", async () => {
       await commands.setup();
     }),
   );

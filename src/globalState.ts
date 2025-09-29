@@ -2,8 +2,8 @@
 
 import * as vscode from "vscode";
 
-const AuthorKey = "ku-eecs-lab-annotator-author";
-const KUIDKey = "ku-eecs-lab-annotator-kuid";
+const AuthorKey = "ku-eecs-documenter-author";
+const KUIDKey = "ku-eecs-documenter-kuid";
 
 class GlobalState {
   private context!: vscode.ExtensionContext;
@@ -21,14 +21,14 @@ class GlobalState {
   public setAuthor(author: string): any {
     this._author = author;
     let extConfig: vscode.WorkspaceConfiguration =
-      vscode.workspace.getConfiguration("ku-eecs-lab-annotator");
+      vscode.workspace.getConfiguration("ku-eecs-documenter");
     extConfig.update("author", author, vscode.ConfigurationTarget.Global);
     return this._state.update(AuthorKey, this._author);
   }
 
   public getAuthor(): string | undefined {
     let extConfig: vscode.WorkspaceConfiguration =
-      vscode.workspace.getConfiguration("ku-eecs-lab-annotator");
+      vscode.workspace.getConfiguration("ku-eecs-documenter");
     const configAuthor = extConfig.get<string>("author", "");
     if ((this._author ?? this._state.get(AuthorKey)) !== configAuthor) {
       this.setAuthor(configAuthor);
@@ -38,7 +38,7 @@ class GlobalState {
 
   public removeAuthor(): void {
     let extConfig: vscode.WorkspaceConfiguration =
-      vscode.workspace.getConfiguration("ku-eecs-lab-annotator");
+      vscode.workspace.getConfiguration("ku-eecs-documenter");
     extConfig.update("author", "");
     this._state.update(AuthorKey, undefined);
   }
@@ -46,14 +46,14 @@ class GlobalState {
   public setKUID(kuid: number): any {
     this._kuid = kuid;
     let extConfig: vscode.WorkspaceConfiguration =
-      vscode.workspace.getConfiguration("ku-eecs-lab-annotator");
+      vscode.workspace.getConfiguration("ku-eecs-documenter");
     extConfig.update("kuid", kuid, vscode.ConfigurationTarget.Global);
     return this._state.update(KUIDKey, this._kuid);
   }
 
   public getKUID(): number | undefined {
     let extConfig: vscode.WorkspaceConfiguration =
-      vscode.workspace.getConfiguration("ku-eecs-lab-annotator");
+      vscode.workspace.getConfiguration("ku-eecs-documenter");
     const configKUID = extConfig.get<number>("kuid", 1234567);
     if ((this._kuid ?? this._state.get(KUIDKey)) !== configKUID) {
       this.setKUID(configKUID);
@@ -63,7 +63,7 @@ class GlobalState {
 
   public removeKUID(): void {
     let extConfig: vscode.WorkspaceConfiguration =
-      vscode.workspace.getConfiguration("ku-eecs-lab-annotator");
+      vscode.workspace.getConfiguration("ku-eecs-documenter");
     extConfig.update("kuid", 1234567);
     this._state.update(KUIDKey, undefined);
   }
