@@ -53,7 +53,7 @@ class FileManager {
 
   public getFileLanguage(fileName: string) {
     const fileExt = fileName.split(".")[fileName.split(".").length - 1];
-    return findKeyByValue(langExt, fileExt) || "python3";
+    return findKeyByValue(langExt, fileExt) || "javascript";
   }
 }
 

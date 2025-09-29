@@ -1,3 +1,5 @@
+/** @format */
+
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";

@@ -37,3 +37,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Fixed
 
 - A few small things here and there.
+
+## [0.1.4] - 2025-09-29
+
+### Fixed
+
+- Defaults to Javascript rather than Python since JS's block comments are more standard
