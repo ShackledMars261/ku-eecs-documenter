@@ -7,3 +7,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 - Initial release
+
+## [0.0.1] - 2025-09-29
+
+### Added
+
+- Lab annotation generation through command palette.

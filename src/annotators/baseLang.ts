@@ -6,7 +6,7 @@ export interface BaseLanguageAnnotator {
     author: string,
     kuid: string,
     dateCreated: string,
-    labNumber: string,
+    lab: string,
     dateLastModified: string,
     purpose: string,
   ): string;

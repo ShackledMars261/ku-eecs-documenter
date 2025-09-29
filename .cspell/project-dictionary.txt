@@ -1,2 +1,4 @@
 eecs
 EECS
+kuid
+KUID

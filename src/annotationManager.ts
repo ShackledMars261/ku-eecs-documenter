@@ -1,13 +1,47 @@
 /** @format */
 
-import { pythonAnnotator } from "./annotators/annotators";
+import {
+  bashAnnotator,
+  cAnnotator,
+  cppAnnotator,
+  csharpAnnotator,
+  golangAnnotator,
+  javaAnnotator,
+  javascriptAnnotator,
+  kotlinAnnotator,
+  mysqlAnnotator,
+  phpAnnotator,
+  pythonAnnotator,
+  rubyAnnotator,
+  rustAnnotator,
+  scalaAnnotator,
+  swiftAnnotator,
+  typescriptAnnotator,
+} from "./annotators/annotators";
 import { BaseLanguageAnnotator } from "./annotators/baseLang";
 import { fileManager } from "./fileManager";
 import { globalState } from "./globalState";
 import { getCurrentFormattedDate } from "./utils";
 
 class AnnotationManager {
-  languageAnnotators: BaseLanguageAnnotator[] = [pythonAnnotator];
+  languageAnnotators: BaseLanguageAnnotator[] = [
+    golangAnnotator,
+    pythonAnnotator,
+    bashAnnotator,
+    cAnnotator,
+    cppAnnotator,
+    csharpAnnotator,
+    javaAnnotator,
+    javascriptAnnotator,
+    kotlinAnnotator,
+    mysqlAnnotator,
+    phpAnnotator,
+    rubyAnnotator,
+    rustAnnotator,
+    scalaAnnotator,
+    swiftAnnotator,
+    typescriptAnnotator,
+  ];
 
   constructor() {}
 

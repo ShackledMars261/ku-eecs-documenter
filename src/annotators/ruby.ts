@@ -2,8 +2,8 @@
 
 import { BaseLanguageAnnotator } from "./baseLang";
 
-class PythonAnnotator implements BaseLanguageAnnotator {
-  languageSlugs: string[] = ["python", "python3", "py"];
+class RubyAnnotator implements BaseLanguageAnnotator {
+  languageSlugs: string[] = ["rb", "ruby"];
   generateAnnotation(
     author: string,
     kuid: string,
@@ -12,15 +12,15 @@ class PythonAnnotator implements BaseLanguageAnnotator {
     dateLastModified: string,
     purpose: string,
   ): string {
-    return `"""
+    return `=begin
 Author: ${author}
 KUID: ${kuid}
 Date: ${dateCreated}
 Lab: ${lab}
 Last Modified: ${dateLastModified}
 Purpose: ${purpose}
-"""\n\n`;
+=end\n\n`;
   }
 }
 
-export const pythonAnnotator: PythonAnnotator = new PythonAnnotator();
+export const rubyAnnotator: RubyAnnotator = new RubyAnnotator();

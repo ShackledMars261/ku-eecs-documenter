@@ -2,8 +2,8 @@
 
 import { BaseLanguageAnnotator } from "./baseLang";
 
-class PythonAnnotator implements BaseLanguageAnnotator {
-  languageSlugs: string[] = ["python", "python3", "py"];
+class ScalaAnnotator implements BaseLanguageAnnotator {
+  languageSlugs: string[] = ["scala"];
   generateAnnotation(
     author: string,
     kuid: string,
@@ -12,15 +12,15 @@ class PythonAnnotator implements BaseLanguageAnnotator {
     dateLastModified: string,
     purpose: string,
   ): string {
-    return `"""
+    return `/*
 Author: ${author}
 KUID: ${kuid}
 Date: ${dateCreated}
 Lab: ${lab}
 Last Modified: ${dateLastModified}
 Purpose: ${purpose}
-"""\n\n`;
+*/\n\n`;
   }
 }
 
-export const pythonAnnotator: PythonAnnotator = new PythonAnnotator();
+export const scalaAnnotator: ScalaAnnotator = new ScalaAnnotator();

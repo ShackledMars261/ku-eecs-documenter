@@ -4,6 +4,7 @@
   "description": "Generate the KU EECS Lab info annotation at the top of the exercises",
   "author": "Jack Martin",
   "publisher": "ShackledMars261",
+  "icon": "./resources/ku_jayhawk_resized.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.104.0"
@@ -17,12 +18,12 @@
     "commands": [
       {
         "command": "ku-eecs-lab-annotator.generateAndWriteAnnotation",
-        "title": "Generate a lab annotation for the current file",
+        "title": "Generate annotation for current file",
         "category": "EECS Annotator"
       },
       {
         "command": "ku-eecs-lab-annotator.setup",
-        "title": "Initial setup for the extension",
+        "title": "Setup the extension",
         "category": "EECS Annotator"
       }
     ],
