@@ -1,22 +1,27 @@
 /** @format */
 
 import * as vscode from "vscode";
+import { annotationManager } from "./annotationManager";
+import * as commands from "./commands/commands";
+import { fileManager } from "./fileManager";
+import { globalState } from "./globalState";
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log(
-    'Congratulations, your extension "ku-eecs-lab-annotator" is now active!',
-  );
+  globalState.initialize(context);
 
-  const disposable = vscode.commands.registerCommand(
-    "ku-eecs-lab-annotator.helloWorld",
-    () => {
-      vscode.window.showInformationMessage(
-        "Hello World from ku-eecs-lab-annotator!",
-      );
-    },
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      "ku-eecs-lab-annotator.generateAndWriteAnnotation",
+      async () => {
+        await annotationManager.initialize();
+        await fileManager.initialize();
+        await commands.generateAnnotation();
+      },
+    ),
+    vscode.commands.registerCommand("ku-eecs-lab-annotator.setup", async () => {
+      await commands.setup();
+    }),
   );
-
-  context.subscriptions.push(disposable);
 }
 
 export function deactivate() {}
