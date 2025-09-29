@@ -112,11 +112,11 @@
       "vsc-extension-quickstart.md"
     ],
     "dictionaries": [
-      "KU EECS Lab Annotator"
+      "KU EECS Documenter"
     ],
     "dictionaryDefinitions": [
       {
-        "name": "KU EECS Lab Annotator",
+        "name": "KU EECS Documenter",
         "path": "./.cspell/project-dictionary.txt",
         "addWords": true
       }

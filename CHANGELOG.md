@@ -31,3 +31,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Added
 
 - Added the icon back.
+
+## [0.1.3] - 2025-09-29
+
+### Fixed
+
+- A few small things here and there.
