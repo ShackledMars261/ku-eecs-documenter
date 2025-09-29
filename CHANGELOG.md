@@ -25,3 +25,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Fixed
 
 - Found more mistakes I made during the rename :|
+
+## [0.1.2] - 2025-09-29
+
+### Added
+
+- Added the icon back.
