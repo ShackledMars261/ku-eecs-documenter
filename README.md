@@ -1,4 +1,4 @@
-# ku-eecs-lab-annotator README
+# KU EECS Lab Annotator
 
 Easily generate the info annotation required on all files by the University of Kansas EECS Department on all lab submissions.
 

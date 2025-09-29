@@ -1,10 +1,13 @@
 {
   "name": "ku-eecs-lab-annotator",
-  "displayName": "KU EECS Lab Annotator",
+  "displayName": "KU EECS Documenter",
   "description": "Generate the KU EECS Lab info annotation at the top of the exercises",
   "author": "Jack Martin",
   "publisher": "ShackledMars261",
-  "icon": "./resources/ku_jayhawk_resized.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShackledMars261/ku-eecs-lab-annotator.git"
+  },
   "version": "0.0.2",
   "engines": {
     "vscode": "^1.104.0"
