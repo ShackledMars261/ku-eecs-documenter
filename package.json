@@ -21,18 +21,18 @@
     "commands": [
       {
         "command": "ku-eecs-lab-annotator.generateAndWriteAnnotation",
-        "title": "Generate annotation for current file",
-        "category": "EECS Annotator"
+        "title": "Generate documentation for current file",
+        "category": "EECS Documenter"
       },
       {
         "command": "ku-eecs-lab-annotator.setup",
         "title": "Setup the extension",
-        "category": "EECS Annotator"
+        "category": "EECS Documenter"
       }
     ],
     "configuration": [
       {
-        "title": "KU EECS Lab Annotator",
+        "title": "KU EECS Documenter",
         "properties": {
           "ku-eecs-lab-annotator.author": {
             "type": "string",

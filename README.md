@@ -1,5 +1,4 @@
-# KU EECS Lab Annotator
-
+# KU EECS Documenter
 Easily generate the info annotation required on all files by the University of Kansas EECS Department on all lab submissions.
 
 ## Features
